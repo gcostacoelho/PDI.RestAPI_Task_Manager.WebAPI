@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "JMYNb7uP6NbL3+nnLCj9/brzOtx3v6iGwrzSdXFjpnx+k02uQ26yRsEeeHn72jfanNmDHRiwEWRvEv0zzF5J8Q==",
+  "success": true,
+  "projectFilePath": "/media/gustavo/Internal-data/Projects/C#/PDI.RestAPI_Task_Manager.WebAPI/PDI.RestAPI_Task_Manager.WebAPI.csproj",
+  "expectedPackageFiles": [
+    "/home/gustavo/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/home/gustavo/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/home/gustavo/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/home/gustavo/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "/home/gustavo/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "/home/gustavo/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
