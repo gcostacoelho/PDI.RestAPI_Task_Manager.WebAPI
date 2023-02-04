@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "JvFgUU4+nzZx4FcpSV3WGzbqe3UbzOqpw9HFUD6KBDw=",
+  "Source": "PDI.RestAPI_Task_Manager.WebAPI",
+  "BasePath": "_content/PDI.RestAPI_Task_Manager.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
