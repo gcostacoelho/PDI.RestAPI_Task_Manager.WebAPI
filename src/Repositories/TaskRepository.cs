@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using PDI.RestAPI_Task_Manager.WebAPI.src.Classes;
 using PDI.RestAPI_Task_Manager.WebAPI.src.Interfaces;
 
@@ -5,36 +6,43 @@ namespace PDI.RestAPI_Task_Manager.WebAPI.src.Repositories
 {
     public class TaskRepository : ITaskRepository
     {
-
         public readonly TaskContext _taskContext;
 
         public TaskRepository(TaskContext taskContext)
         {
             _taskContext = taskContext;
         }
-        public Task<Classes.Task> Create(Classes.Task task)
+        public async Task<Classes.Task> Create(Classes.Task task)
         {
-            throw new NotImplementedException();
+            _taskContext.Tasks.Add(task);
+            await _taskContext.SaveChangesAsync();
+
+            return task;
         }
 
-        public System.Threading.Tasks.Task Delete(int id)
+        public async System.Threading.Tasks.Task Delete(int id)
         {
-            throw new NotImplementedException();
+            var taskToDelete = await _taskContext.Tasks.FindAsync(id);
+            _taskContext.Tasks.Remove(taskToDelete);
+
+            await _taskContext.SaveChangesAsync();
         }
 
-        public Task<IEnumerable<Classes.Task>> Get()
+        public async Task<IEnumerable<Classes.Task>> Get()
         {
-            throw new NotImplementedException();
+            return await _taskContext.Tasks.ToListAsync();
         }
 
-        public Task<Classes.Task> Get(int id)
+        public async Task<Classes.Task> Get(int id)
         {
-            throw new NotImplementedException();
+            return await _taskContext.Tasks.FindAsync(id);
         }
 
-        public System.Threading.Tasks.Task Update(Classes.Task task)
+        public async System.Threading.Tasks.Task Update(Classes.Task task)
         {
-            throw new NotImplementedException();
+            _taskContext.Entry(task).State = EntityState.Modified;
+
+            await _taskContext.SaveChangesAsync();
         }
     }
 }
