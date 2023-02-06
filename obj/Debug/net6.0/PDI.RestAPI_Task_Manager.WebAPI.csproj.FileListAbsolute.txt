@@ -68,3 +68,5 @@
 /media/gustavo/Internal-data/Projects/C#/PDI.RestAPI_Task_Manager.WebAPI/obj/Debug/net6.0/PDI.RestAPI_Task_Manager.WebAPI.pdb
 /media/gustavo/Internal-data/Projects/C#/PDI.RestAPI_Task_Manager.WebAPI/obj/Debug/net6.0/PDI.RestAPI_Task_Manager.WebAPI.genruntimeconfig.cache
 /media/gustavo/Internal-data/Projects/C#/PDI.RestAPI_Task_Manager.WebAPI/obj/Debug/net6.0/ref/PDI.RestAPI_Task_Manager.WebAPI.dll
+/media/gustavo/Internal-data/Projects/C#/PDI.RestAPI_Task_Manager.WebAPI/bin/Debug/net6.0/DateOnlyTimeOnly.AspNet.dll
+/media/gustavo/Internal-data/Projects/C#/PDI.RestAPI_Task_Manager.WebAPI/bin/Debug/net6.0/DateOnlyTimeOnly.AspNet.Swashbuckle.dll

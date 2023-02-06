@@ -26,13 +26,13 @@ namespace PDI.RestAPI_Task_Manager.WebAPI.Controllers
         }
 
         [HttpPost("/tasks/create")]
-        public async Task<ActionResult<src.Classes.Task>> createTask([FromBody] src.Classes.Task task)
+        public async Task<ActionResult<src.Classes.Task>> createTask([FromQuery] src.Classes.Task task)
         {
             return await _taskRepository.Create(task);
         }
 
         [HttpPut("/tasks/update/{id}")]
-        public async Task<ActionResult<src.Classes.Task>> updateTask([FromBody] src.Classes.Task task, int id)
+        public async Task<ActionResult<src.Classes.Task>> updateTask([FromQuery] src.Classes.Task task, int id)
         {
             if (id != task.id)
             {

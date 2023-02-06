@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "kOEbo7962FykI8z+t0e+LIFBdybS7p5JoiCCFSMFkBHksn6f6SJECbFxxuZtwVKovDylUBy+G5R+AUD/uY0rsQ==",
+  "dgSpecHash": "dxo6OeSHSnpnOcwPvJJ8TLNPeoO3ak2ENnjBj+m+nwjHqABfec7GFNt4dMTunFlXDihQQgtd4KJsOukipn9rMA==",
   "success": true,
   "projectFilePath": "/media/gustavo/Internal-data/Projects/C#/PDI.RestAPI_Task_Manager.WebAPI/PDI.RestAPI_Task_Manager.WebAPI.csproj",
   "expectedPackageFiles": [
+    "/home/gustavo/.nuget/packages/dateonlytimeonly.aspnet/2.0.1/dateonlytimeonly.aspnet.2.0.1.nupkg.sha512",
+    "/home/gustavo/.nuget/packages/dateonlytimeonly.aspnet.swashbuckle/2.0.1/dateonlytimeonly.aspnet.swashbuckle.2.0.1.nupkg.sha512",
     "/home/gustavo/.nuget/packages/microsoft.data.sqlite.core/7.0.2/microsoft.data.sqlite.core.7.0.2.nupkg.sha512",
     "/home/gustavo/.nuget/packages/microsoft.entityframeworkcore/7.0.2/microsoft.entityframeworkcore.7.0.2.nupkg.sha512",
     "/home/gustavo/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.2/microsoft.entityframeworkcore.abstractions.7.0.2.nupkg.sha512",

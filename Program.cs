@@ -6,13 +6,14 @@ using PDI.RestAPI_Task_Manager.WebAPI.src.Repositories;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers();
+builder.Services.AddDateOnlyTimeOnlyStringConverters();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(op => op.UseDateOnlyTimeOnlyStringConverters());
 
-builder.Services.AddDbContext<TaskContext> (db => db.UseSqlite("Data source  = tasks.db"));
+builder.Services.AddDbContext<TaskContext> (db => db.UseSqlite("Data source = tasks.db"));
 builder.Services.AddScoped<ITaskRepository, TaskRepository>();
 
 var app = builder.Build();

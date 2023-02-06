@@ -8,11 +8,33 @@
     ".NETCoreApp,Version=v6.0": {
       "PDI.RestAPI_Task_Manager.WebAPI/1.0.0": {
         "dependencies": {
+          "DateOnlyTimeOnly.AspNet": "2.0.1",
+          "DateOnlyTimeOnly.AspNet.Swashbuckle": "2.0.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "7.0.2",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
         "runtime": {
           "PDI.RestAPI_Task_Manager.WebAPI.dll": {}
+        }
+      },
+      "DateOnlyTimeOnly.AspNet/2.0.1": {
+        "runtime": {
+          "lib/net6.0/DateOnlyTimeOnly.AspNet.dll": {
+            "assemblyVersion": "2.0.1.0",
+            "fileVersion": "2.0.1.0"
+          }
+        }
+      },
+      "DateOnlyTimeOnly.AspNet.Swashbuckle/2.0.1": {
+        "dependencies": {
+          "DateOnlyTimeOnly.AspNet": "2.0.1",
+          "Swashbuckle.AspNetCore.SwaggerGen": "6.2.3"
+        },
+        "runtime": {
+          "lib/net6.0/DateOnlyTimeOnly.AspNet.Swashbuckle.dll": {
+            "assemblyVersion": "2.0.1.0",
+            "fileVersion": "2.0.1.0"
+          }
         }
       },
       "Microsoft.Data.Sqlite.Core/7.0.2": {
@@ -429,6 +451,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "DateOnlyTimeOnly.AspNet/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/RUaNOplY+vFphsFujZBtibvBZI1saCJGk3rK+VQJRCL/lnTwzW+M/0p3tUmkttKcYkabdTuxzyLfWwvkfjlfQ==",
+      "path": "dateonlytimeonly.aspnet/2.0.1",
+      "hashPath": "dateonlytimeonly.aspnet.2.0.1.nupkg.sha512"
+    },
+    "DateOnlyTimeOnly.AspNet.Swashbuckle/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-84uVHDLlRebaDTAHzmCTWnq3tp3OYmQwEEUyet+iO/ypGoqyB6rqBzxnieHP7x2Id7S4hukqkDT/4fi172ri2w==",
+      "path": "dateonlytimeonly.aspnet.swashbuckle/2.0.1",
+      "hashPath": "dateonlytimeonly.aspnet.swashbuckle.2.0.1.nupkg.sha512"
     },
     "Microsoft.Data.Sqlite.Core/7.0.2": {
       "type": "package",
