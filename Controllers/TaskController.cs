@@ -1,3 +1,4 @@
+using System.Globalization;
 using Microsoft.AspNetCore.Mvc;
 using PDI.RestAPI_Task_Manager.WebAPI.src.Interfaces;
 
@@ -26,13 +27,17 @@ namespace PDI.RestAPI_Task_Manager.WebAPI.Controllers
         }
 
         [HttpPost("/tasks/create")]
-        public async Task<ActionResult<src.Classes.Task>> createTask([FromQuery] src.Classes.Task task)
+        public async Task<ActionResult<src.Classes.Task>> createTask(int id, String nome_tarefa, String descricao, String data_entrega)
         {
+            var data = DateOnly.Parse(data_entrega, new CultureInfo("pt-BR"));
+
+            src.Classes.Task task = new src.Classes.Task(id, nome_tarefa, descricao, data);
+            
             return await _taskRepository.Create(task);
         }
 
         [HttpPut("/tasks/update/{id}")]
-        public async Task<ActionResult<src.Classes.Task>> updateTask([FromQuery] src.Classes.Task task, int id)
+        public async Task<ActionResult<src.Classes.Task>> updateTask([FromBody] src.Classes.Task task, int id)
         {
             if (id != task.id)
             {
